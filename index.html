@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор КБЖВ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор КБЖВ</h2>
+        <label for="food">Оберіть страву:</label>
+        <select id="food" onchange="updateImage()">
+            <option value="110,3.6,1.8,20.1,grechka.png,Гречка">Гречка </option>
+            <option value="130,2.7,0.3,28.2,ris.png,Рис">Рис </option>
+            <option value="1,0,0,0.3,tea.png,Чай">Чай </option>
+            <option value="89,1.1,0.3,22.8,БАНАН.png,Банан">Банан </option>
+            <option value="50,1.5,2.5,6,Борщ.png,Борщ">Борщ </option>
+            <option value="250,18,20,3,Відбивна.png,Відбивна(куряча)">Відбивна(куряча)</option>
+            <option value="30,0.6,0.2,7.6,КАВУН.png,Кавун">Кавун</option>
+            <option value="140,6,10,7,крабовий салат.png,Крабовий салат">Крабовий салат </option>
+            <option value="266,11,10,33,піца.png,Піца">Піца</option>
+            <option value="90,2,3,14,пюре.png,Пюре">Пюре</option>
+            <option value="330,7.5,17,37,рогалік.png,Рогалик">Рогалик </option>
+            <option value="40,1.2,2,4,салат.png,Салат">Салат</option>
+            <option value="30,1,1,4,суп.png,Суп">Суп</option>
+            <option value="410,11,10,70,сухарики.png,Сухарики">Сухарики</option>
+            <option value="140,6,4,20,суші.png,Суші">Суші</option>
+            <option value="350,4,22,35,торт.png,Торт">Торт</option>
+            <option value="520,6.5,30,52,ЧІПСИ.png,Чипси">Чипси</option>
+            <option value="270,17,22,1,шашлик.png,Шашлик">Шашлик</option>
+            <option value="420,23,38,1,ковбаса.png,Ковбаса">Ковбаса</option>
+            <option value="99,20,1,0.5,креветка.png,Креветка">Креветка</option>
+            <option value="165,25,7,0,курка.png,Курка">Курка</option>
+            <option value="208,20,13,0,риба.png,Риба">Риба</option>
+            <option value="350,26,28,0,сир.png,Сир">Сир</option>
+        </select>
+        <img id="foodImage" src="grechka.png" class="food-img">
+        <label for="weight">Введіть кількість грамів:</label>
+        <input type="number" id="weight" placeholder="Введіть вагу в грамах" min="1">
+        <button onclick="calculate()">Розрахувати</button>
+        <h3>Результати:</h3>
+        <p id="result"></p>
+        <h3>Список спожитих страв:</h3>
+        <ul id="consumedList">
+
+        </ul>
+        <h3>Загальна кількість калорій:</h3>
+        <p id="total_ccal"></p>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

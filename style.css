@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Comfortaa:wght@300..700&family=Viaoda+Libre&display=swap');
+
+body 
+{ 
+    text-align: center; 
+    margin: 20px;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  
+}
+.container 
+{ 
+    max-width: 400px; 
+    margin: auto; 
+    padding: 20px; 
+    border: 5px solid #03662fad ; 
+    border-radius: 20px; 
+    background-color: #61ca90ad;
+
+
+}
+select, input, button 
+{ 
+    width: 95%; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 10px;
+    font-size:20px;
+    border: 3px solid #03662fad;
+
+    
+}
+button{
+  background-color: #03662fad;
+  color:white;
+  border: 3px solid #03662fad;
+}
+button:hover{
+  background-color: #0cb458ad;
+
+}
+.food-img 
+{ 
+    width: 100%; 
+    max-height: 400px; 
+    margin: 10px 0; 
+    border-radius: 10px; 
+}
+#consumedList {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    max-width: 400px;
+  }
+  
+  #consumedList li {
+    background-color: #f0f8ff;
+    border-left: 5px solid #03662fad;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  #consumedList li:hover {
+    background-color: #e0f2f1;
+  }
